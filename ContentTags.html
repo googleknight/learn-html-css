@@ -3,13 +3,36 @@
     <head>
         <meta charset="utf-8">
         <title>JS Bin</title>
+        <style>
+        li{
+            color:black;
+        }
+        ol>li{
+            color:green;
+        }
+        div~p{
+            color:orange;
+        }
+        ol.list>li:last-child{
+            color:blue;
+        }
+        </style>
     </head>
     <body>
         <h1>My favorite social media sites</h1>
-        <ol>
+        <div>Inside a div</div>
+        <p>Para near div</p>
+        <p>Para near para</p>
+        <ol class='list'>
             <li>reddit</li>
+            <li>
+                <ul>
+                    <li>Another inside</li>
+                </ul>
+            </li>
             <li>Twitter</li>
             <li>Instagram</li>
+            <li>somethings</li>
         </ol>
     </body>
 </html>
