@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JS Bin</title>
+        <style>
+        body{
+            text-align: center;
+        }
+        header{
+            height: 20vh;
+        }
+        main{
+            display: flex; 
+            flex-direction:column;
+            align-items: stretch;
+            height: 100vh;
+            border: 1px solid #000;
+        }
+        nav{
+            height: 20vh;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #000;
+        }
+        section{
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+            border: 1px solid #000;
+        }
+        article{
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+            border: 1px solid #000;
+        }
+        aside{
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #000;
+        }
+        .colgroup{
+            display: flex; 
+            flex-grow: 1;
+            flex-direction:column;
+            border: 1px solid #000;
+        }
+        .rowgroup{
+            height: 40vh;
+            display: flex; 
+            flex-direction:row;
+            border: 1px solid #000;
+        }
+        @media only screen and (max-width: 1000px) {
+            aside{
+            display : none;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <main>
+            <header>Header</header>
+            <nav>Nav</nav>
+            <div class='rowgroup'>
+                <div class='colgroup'>
+                    <section>Section</section>
+                    <article>Article</article>
+                </div>
+                <aside>Aside</aside>
+            </div>
+            <footer>Footer</footer>
+        </main>
+</html>
